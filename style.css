@@ -9,7 +9,7 @@
     width: 100%;
     height: 100vh;
     padding: 0 8%;
-    background-image: url(images/background.png);
+    background-image:url(images/background.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -98,4 +98,8 @@
         opacity: 1;
         bottom: 105%;
     }
+}
+
+#seconds{
+    color: #ff3c56;
 }
