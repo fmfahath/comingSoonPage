@@ -1,5 +1,6 @@
-  let countDownDate = new Date("Jan 01, 2024 00:00:00").getTime();
+  let countDownDate = new Date("Jan 01, 2024 10:00:00").getTime();
 
+  //find date & time difference
   let x  = setInterval(() => {
         let dateNow = new Date().getTime();
         let timeDiff = countDownDate - dateNow;   
@@ -14,6 +15,17 @@
         document.getElementById('minutes').innerHTML = min;
         document.getElementById('seconds').innerHTML = sec;
 
+        //if date passed
+        if( timeDiff < 0){
+            clearInterval(x);
+            document.getElementById('days').innerHTML = "00";
+            document.getElementById('hours').innerHTML = "00";
+            document.getElementById('minutes').innerHTML = "00";
+            document.getElementById('seconds').innerHTML = "00";
+        }
+        
+
   }, 1000);
+
 
 
