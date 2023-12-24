@@ -65,3 +65,18 @@
     width: 15px;
     margin-left: 10px;
 }
+
+.launch-time{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.launch-time div{
+    flex-basis: 100px;
+}
+
+.launch-time  div p{
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
