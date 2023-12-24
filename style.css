@@ -12,6 +12,7 @@
     background-image: url(images/background.png);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .logo{
@@ -19,3 +20,25 @@
     padding: 20px 0;
     cursor: pointer;
 }
+
+.content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.content p{
+    font-size: 25px;
+
+}
+
+.content  h3{
+    font-size: 64px;
+    font-weight: 500px;
+}
+
+.content  h1 span{
+    color: #ff3753;
+}
+
