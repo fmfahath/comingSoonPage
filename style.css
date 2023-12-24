@@ -30,10 +30,11 @@
 
 .content p{
     font-size: 25px;
+    margin-bottom: 10px;
 
 }
 
-.content  h3{
+.content  h1{
     font-size: 64px;
     font-weight: 500px;
 }
@@ -42,3 +43,25 @@
     color: #ff3753;
 }
 
+.content button{
+    padding: 15px 35px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.content button:hover{
+    border: 2px solid #ff3753;
+}
+
+.content button img{
+    width: 15px;
+    margin-left: 10px;
+}
