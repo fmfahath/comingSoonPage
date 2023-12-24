@@ -10,10 +10,10 @@
         let min = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60)); 
         let sec = Math.floor((timeDiff % (1000 * 60)) / (1000)); 
 
-        document.getElementById('days').innerHTML = days;
-        document.getElementById('hours').innerHTML = hrs;
-        document.getElementById('minutes').innerHTML = min;
-        document.getElementById('seconds').innerHTML = sec;
+        document.getElementById('days').innerHTML = days < 10 ? "0"+days : days;
+        document.getElementById('hours').innerHTML = hrs < 10 ? "0"+hrs : hrs;
+        document.getElementById('minutes').innerHTML = min < 10 ? "0"+min : min;
+        document.getElementById('seconds').innerHTML = sec < 10 ? "0"+sec : sec;
 
         //if date passed
         if( timeDiff < 0){
